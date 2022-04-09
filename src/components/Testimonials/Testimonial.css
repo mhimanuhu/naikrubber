@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.Carousel_desktop{
+    width: 90%;
+    margin: 0 auto;
+}
+.Carousel_respo{
+
+    margin: 0 auto;
+    display: none;
+}
+.slick-prev{
+    z-index:9999 !important;
+    margin-left: 2px;
+}
+.slick-next{
+    z-index:100px !important;
+    margin-right: 2px;   
+}
+.slick-next::before , .slick-prev::before{
+    color: black !important;
+}
+.slick-next:hover{
+    color: blue !important;
+}
+.slick-slide{
+    filter: brightness(.97);
+    transition: .2s ease-in-out;
+    box-shadow: none;
+    transition: .5s;
+}
+.slick-center{
+    transition: .2s ease-in-out;
+    filter: brightness(1);
+    box-shadow: 0 8px 30px -7px #f7fbfd;
+    transition: .5s;
+}
+.comp{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+}
+.Tcard{
+    background:#fff;
+    padding: 20px 10px 25px 10px;
+    border-radius: 5px;
+}
+.TestimonialContainer{
+    background-color: #dddddd94;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.TestimonialHeadingContainer{
+    position: relative;
+}
+.Tcard > img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px #95abbb;;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.Tcard > .Review{
+    font-family: Montserrat, sans-serif;
+    font-size:14px;
+    text-align: center;
+    margin-top: 18px;
+    font-weight: 0;
+    color: #555555;
+}
+.Tcard > .User_name{
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1a7d72;
+}
+.Tcard > .post{
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #666666;
+}
+.Tcard > .User_company{
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    font-weight:500;
+    font-size: 15px;
+    color: #666666;
+}
+.Tcard > .User_location{
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #666666;
+}
+
+@media(max-width:960px){
+    .Carousel_desktop{
+        display: none;
+        transition: .5s display;
+    }
+    .Carousel_respo{
+        display: block;
+        width: 85%;
+    }
+    .slick-slide{
+        filter: blur(0);
+        transition: .2s ease-in-out;
+        box-shadow: none;
+        transition: .5s;
+    }
+    .slick-center{
+        transition: .2s ease-in-out;
+        filter: blur(0);
+        box-shadow: 0 8px 30px -7px #c9dff0;
+        transition: .5s;
+    }
+    .slick-prev{
+    z-index:9999 !important;
+    margin-left: 1px;
+}
+   .slick-next{
+    z-index:100px !important;
+    margin-right: 1px;   
+}
+}

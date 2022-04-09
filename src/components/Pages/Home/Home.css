@@ -1,0 +1,406 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.Herosection{
+    height: 450px;
+    background-color: #76bcb4;
+    display:flex;
+}
+.Section1{
+    width: 60%;
+    margin: 100px 20px 90px 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Section1 > .Hero_heading{
+    background-color: chartreuse;
+    width: max-content;
+    font-size: 32px;
+    padding: 10px 15px 10px 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+}
+.Section1 > .Hero_para{
+    color: white;
+    width: 70%;
+    font-weight: 100;
+    font-size:14px;
+    font-family: Montserrat, sans-serif;
+}
+.Section1 > .Hero_button{
+    background-color: white;
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: max-content;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+}
+.Section2{
+    background-color: cadetblue;
+    flex-grow: 2;
+    margin: 10px 10px 10px 10px;
+}
+.OurProductsContainer{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position:relative;
+}
+.BlockHeading{
+    font-weight: 500 ;
+    color: #197d71;
+    font-size: 30px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    padding: 15px 0px;
+}
+.BlockHeading::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    background-color: #1a7d72;
+    width: 15px;
+    height: 7px;
+    margin: 0 auto;
+    right: 0;
+}
+.BlockHeading::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    background-color: #555252;
+    width: 15px;
+    height: 7px;
+    margin: 0 auto;
+    right: 0;
+}
+.OurProductsContainer > p{
+    text-align: center;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    color: #666666;
+    padding: 0px 40px 0px 40px;
+}
+.ProductswithImageContainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.Product{
+    width: 292px;
+    height: 474px;
+    padding:15px;
+}
+.ProductswithImageContainer > .Product > img {
+    width: 260px;
+    height: 317px;
+}
+.productcard{
+    padding: 10px 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    height: 130px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+}
+.productcard > .title{
+    font-size: 16px;
+    margin: 5px 0px 10px;
+    font-family: Montserrat, sans-serif;
+}
+.productcard > .viewdetails{
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    background-color: #197D71;
+    margin: 0px 0px 10px ;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-align: center;
+}
+.View_more_container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+}
+.viewmorebtn{
+    color: #1a7d72;
+    border: 2px solid #1a7d72;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+    font-family: Montserrat, sans-serif;
+}
+.viewmorebtn:hover{
+    background-color: #1a7d72;
+    color: white;
+}
+      /* ABOUT US CARDS & CONTAINER */
+.AboutUsContainer{
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.AboutUsContainer > p {
+    text-align: center;
+    color: #197d71;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: Montserrat, sans-serif;
+}
+.About_desc{
+    margin: 20px 20% 0px 20%;
+    text-align: left;
+    color: #666666;
+    font-weight: lighter;
+    font-family: Montserrat, sans-serif;
+}
+.AboutCardsContainer{
+    margin: 20px 8% 0px 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.AboutCard{
+    box-shadow: 0px 1rem 1rem 0px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    min-height: 300px;
+    max-height: fit-content;
+    width: 360px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.AboutCardImage{
+    display: flex;
+    justify-content: center;
+}
+.AboutCardImage > img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.AboutCardTitle{
+    font-size: 20px;
+    color: #197d71;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+    font-family: Montserrat, sans-serif;
+}
+.AboutCardDesc{
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+}
+.OurGalleryContainer{
+    margin-top: 50px;
+    position: relative;
+}
+.OurGalleryContainer > p{
+    margin: 0px 20% 0px 20% ;
+    text-align: center;
+    color: #666666;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+}
+.GalleryImageContainer{
+    margin: 30px 10% 0px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.GalleryImageContainer > img{
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.Contact_Section{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 10% 0px 10%;
+    justify-content: space-between;
+    height: fit-content;
+}
+.ContactSection1 > .ContactHead{
+    font-size: 30px;
+    color: #197d71;
+    font-family: Montserrat, sans-serif; 
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.ContactForm > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px 0px 0px 20px;
+    height: 300px;
+}
+.ContactForm > form > label{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif; 
+}
+.ContactForm > form > label > input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #9e9393;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    line-height: 35px;
+    padding-left:10px ;
+}
+.ContactForm > form > label > input:focus{
+    border-bottom: 2px solid #555252;
+    background-color: aliceblue;    
+}
+
+.ContactSection2{
+     background-color: blue;
+     width:40%;
+     display: grid;
+     color: white;
+     place-items: center;
+}
+form > button{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 15px;
+    width: fit-content;
+    background-color: #1a7d72;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+    color:white;
+    font-family: Montserrat, sans-serif;
+}
+form > button:hover{
+    transition: .4s background-color;
+    background-color: #555252;
+}
+form > button:active{
+    background-color: #3d3939;
+}
+@media(max-width:1440px){
+    .OurProductsContainer{
+        margin-top: 50px;
+        margin-left: 3%;
+        margin-right: 3%;
+        position:relative;
+    }
+}
+@media(max-width:1330px){
+    .AboutCardsContainer{
+        margin: 20px 15% 0px 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1000px;
+        transition: .3s;
+    }
+    .AboutCard{
+        box-shadow:0 0.5rem 1rem rgb(0 0 0 / 15%);
+        border-radius: 3px;
+        min-height: 300px;
+        width:100%;
+        max-height: fit-content;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        transition: .3s;
+    }
+}
+@media(max-width:1235px){
+    .ProductswithImageContainer{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: .3s;
+    }
+    .Product{
+        width: 100%;
+        height: 474px;
+        padding:15px;
+        transition: .3s;
+    }
+    .ProductswithImageContainer > .Product > img {
+        width: 100%;
+        height: 317px;
+        transition: .3s;
+    }
+
+}
+@media(max-width:960px){
+    .Herosection{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        transition: .3s;
+    }
+    .Section1{
+        width: 70%;
+        margin: 50px 20px 30px 50px;
+        height: 250px;
+        justify-content: space-around;
+        transition: .3s;
+    }
+    .Section1 > .Hero_heading{
+        background-color: chartreuse;
+        width: max-content;
+        font-size: 25px;
+        padding: 10px 15px 10px 15px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 900;
+    }
+    .Section1>.Hero_para{
+        color: white;
+        display: block;
+        width: 100%;
+    }
+}
+@media(max-width:580px){
+    .GalleryImageContainer{
+        margin: 30px 10% 0px 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .Contact_Section{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 10% 0px 10%;
+    }
+    .ContactSection2{
+        background-color: blue;
+        width:90%;
+        display: grid;
+        color: white;
+        place-items: center;
+        height: 300px;
+        margin-top: 50px;
+   }
+}
+@media(max-width:470px){
+    .Section1 > .Hero_heading{
+        background-color: chartreuse;
+        width: max-content;
+        font-size: 18px;
+        padding: 8px 12px 8px 12px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 900;
+    }
+}

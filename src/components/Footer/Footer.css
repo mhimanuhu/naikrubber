@@ -1,0 +1,51 @@
+.FooterContainer{
+    background-color: #197d71;
+    padding: 40px 10% 20px 10%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.FooterHeading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2e2e2e;
+    margin: 0 0 25px 0;
+    padding: 30px 0 0 0 ;
+    color: #fff;
+}
+.FooterHeading::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 30px !important;
+    background: #9cc212;
+    width: 15px;
+    height: 7px;
+}
+.FooterHeading::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 15px !important;
+    background: #7a941a;
+    width: 15px;
+    height: 7px;
+}
+.Footer_About{
+    position:relative;
+    width: 30%;
+}
+.Second_Comp{
+    margin: 10px 10px 0 20px;
+}
+.Footer_UsefulLinks{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+   
+}
+.FooterULinks > li{
+    list-style: none;
+}

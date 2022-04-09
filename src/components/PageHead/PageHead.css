@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.Page_Heading{
+    background-color: #197d71;
+    padding-left: 18%;
+}
+.Page_Heading > .Page_title{
+    color: #fff;
+    font-size: 28px;
+    font-family: Montserrat, sans-serif;
+    padding-top:35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Home_route{
+    display: flex;
+    padding:10px 0px 60px 10px;
+}
+.Home_route > li{
+    list-style:none ;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.Home_route > a >li {
+    color: #fff;
+}
